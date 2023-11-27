@@ -1,12 +1,20 @@
+import { motion } from "framer-motion";
 import { email, github, linkedin, ng } from "../../assets";
 import "./navbar.scss";
+import Sidebar from "../sidebar/Sidebar";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
         <div className="nav-icon">
-          <img src={ng} alt="email" />
+          <motion.img
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 0.5 }}
+            transition={{ duration: 0.5 }}
+            src={ng}
+            alt="email"
+          />
         </div>
         <div className="nav-spacer" />
         <div className="nav-order-list">
@@ -29,6 +37,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <Sidebar />
     </nav>
   );
 };
