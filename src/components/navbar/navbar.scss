@@ -1,16 +1,11 @@
-.nav {
-  height: 90px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+nav {
+  height: 100px;
 }
 
 .nav-container {
   height: 100%;
   display: flex;
   align-items: center;
-
-  .nav-entel-icon {
-    padding: 30px;
-  }
 
   .nav-spacer {
     flex-grow: 1;
